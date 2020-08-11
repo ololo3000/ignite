@@ -347,6 +347,8 @@ public abstract class AbstractReducer implements Reducer {
             if (page != null)
                 break;
 
+            ctx.log(AbstractReducer.class).info(">>> WAITING FOR THE NEXT PAGE!!!");
+
             checkSourceNodesAlive();
         }
 
